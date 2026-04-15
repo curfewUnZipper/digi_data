@@ -1,0 +1,1 @@
+cpu fan speed, cpu temp, cpu fan current and voltage gpu fan speed, gpu temp, cpu fan current and voltage gimme the program to run in linux - as sensors is not working: "Sorry, no sensors were detected. This is relatively common on laptops, where thermal management is handled by ACPI rather than the OS. "

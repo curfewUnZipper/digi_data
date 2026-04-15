@@ -1,0 +1,33 @@
+how to run man_monitor.sh
+
+1. setup: sudo modprobe ec_sys
+2. check: ls /sys/kernel/debug/ec
+
+3. chmod +x man_monitor.bash
+4. ./man_monitor.bash
+
+5. TO STRESS CPU: stress-ng --cpu 8
+cha
+TIMING OF STRESS:
+19:56 mar 24
+8:11 8:14 am mar 27
+11:33 a.m. mar 28
+
+Pair man_monitor - logging allsensor data
+      change_2 - logging change from last value
+      
+      
+      
+FLOW: EC → read bytes → compute RPM → decide → write control → repeat
+
+b100+  → temperature (fast/noisy)
+b85    → fan stage (DISCRETE LEVEL)
+b86/88 → actual fan speed
+
+0 → idle
+5 → low
+7 → medium
+9 → high
+
+
+can we notice how much voltage the fan takes for thiese different scenarios per rpm if the max rpm of my fan is

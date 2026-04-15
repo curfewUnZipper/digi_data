@@ -1,0 +1,3 @@
+watch -n 1 sudo hexdump -C /sys/kernel/debug/ec/ec0/io
+
+to find the fan
